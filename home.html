@@ -1,0 +1,169 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+<style>
+    .navbar-nav > li{
+      padding-left:60px;
+      padding-right:60px;
+    }
+
+    nav{
+      background-color: black;
+    }
+
+    .nav-link {
+      color: white;
+      transition: all 0.2s
+    }
+
+  .navbar .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: red;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+    font-weight: bold;
+    font-size:21.5px;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: red;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 25%;
+  }
+
+  .container {
+    margin-top: 10 !important;
+  }
+
+  .height {
+    height: 589px;
+  }
+
+  .valued {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .newFont {
+    font-family: 'Kalam', cursive;
+  }
+
+  .spacing {
+    padding-top: 15px;
+  }
+
+  .buttonFont {
+    font-size: 21.5px;
+    font-weight: bold;
+  }
+
+  .pFont {
+    font-size: 21.5px;
+  }
+</style>
+
+
+<nav class="navbar navbar-expand-lg navbar-light py-4">
+    <a class="navbar-brand" href="home.html">
+        <img src="images/logo - copy.png" idth="50" height="120" alt="Bootstrap">
+    </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="about.html" color="white">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html" color="white">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="stylists.html" color="white">STYLISTS</a>
+      </li>
+      <li>
+        <a class="btn btn-outline-danger buttonFont" type="button" href="appointment1.html">Book an Appointment</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Carousel1.jpg" class="d-block w-100 height" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/Carousel2.jpg" class="d-block w-100 height" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/Carousel3.jpg" class="d-block w-100 height" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container">
+    <p class="display-2 text-center"> Welcome to <span style="color: red; font-weight: 600">Champion</span> Hair Salon </p>
+    
+    <p class="text-center pFont"> We value consistent excellent service to our valued clients. We offer haircuts, colouring, styling, and treatments. </p>
+
+    <p class=" text-center pFont"> Serving Ottawa since 2023 </p>
+    <div class="text-center">
+    <a class="btn btn-outline-danger buttonFont" type="button" href="appointment1.html">Book an Appointment</a>  
+</div>
+</div>
+
+<h2 class="valued">Hear from our valued customers:</h2>
+
+<div class="container">
+    <div class="row">
+        <div class = "col-sm">
+          <div class="text-center">
+            <img src="images/home1.jpg" class="center-block" width="300px" height="300px">
+            
+            <h3 class="newFont spacing"><span style="color: rgb(0,155,214)">Maddy</span></h3></div>
+
+           <p class="newFont"><span style="font-size: 18px">My recent visit to was absolutely fantastic! The salon used high-quality products that left my hair looking and feeling healthier than ever. The stylists are experts in what they do and I think I have found the salon for me!</span></p>
+        </div>
+        <div class="col-sm">
+          <div class="text-center">
+            <img src="images/home2.jpg" class="center-block" width="300px" height="300px">
+            <h3 class="newFont spacing"><span style="color: rgb(0,155,214)">Dave</span></h3></div>
+            <p class="newFont"><span style="font-size: 18px">Champion Hair Salon is top-notch! Great service, skilled stylists, and a fantastic atmosphere. Highly satisfied and I rate it five stars!</span></p>
+        </div>
+        <div class = "col-sm">
+          <div class="text-center"><div class="text-center"></div>
+            <img src="images/home3.jpg" class="center-block" width="300px" height="300px">
+            <h3 class="newFont spacing"><span style="color: rgb(0,155,214)">Judy</span></h3></div>
+            <p class="newFont"><span style="font-size: 18px">The staff is friendly, the ambiance is inviting, and my stylist, Elena Summers, is a true artist. Highly recommended!</span></p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

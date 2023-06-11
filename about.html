@@ -1,0 +1,182 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+  .navbar-nav > li{
+      padding-left:60px;
+      padding-right:60px;
+  }
+
+  nav{
+          background-color: black;
+  }
+
+  .nav-link {
+    color: white;
+    transition: all 0.2s'
+  }
+
+  .navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: red;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+    font-weight: bold;
+    font-size:21.5px;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: red;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 25%;
+}
+
+.container {
+  margin-top: 10 !important;
+}
+.acc {
+      display: flex;
+      justify-content: center;
+    }
+
+    .accordion {
+      width: 1000px; /* Adjust the max-width as per your needs */
+    }
+
+    .buttonFont {
+    font-size: 21.5px;
+    font-weight: bold;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light py-4">
+  <a class="navbar-brand" href="home.html">
+      <img src="images/logo - copy.png" idth="50" height="120" alt="Bootstrap">
+  </a>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarText">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="about.html" color="white">ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="services.html" color="white">SERVICES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="stylists.html" color="white">STYLISTS</a>
+    </li>
+    <li>
+      <a class="btn btn-outline-danger buttonFont" type="button" href="appointment1.html">Book an Appointment</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+<h1 class="display-4 text-center"><span style="color: red; font-weight: 600">About</span> Us</h1>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1 class="text-left">  <i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp;Our Location </h1>
+        <p class="text-left"> 123 Anywhere Street </p>
+        <p class="text-left"> Ottawa, Ontario A1A 1A1 </p>
+        <h1 class="text-left"><i class="fas fa-phone fa-flip-horizontal"></i> &nbsp;Contact Us </h1>
+        <p class="text-left">(555) 555-5555</p>
+        <h1 class="text-left">  <i class="fas fa-clock"></i> &nbsp;Hours of Operation </h1>
+        <p class="text-left"> Monday-Friday: 9:00 am - 5:00 pm </p>
+        <p class="text-left"> Saturday: 11:00 am - 3:00pm </p>
+        <p class="text-left"> Sunday: CLOSED </p>
+      </div>
+      <div class="col-sm">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5600.634436078211!2d-75.6886320788855!3d45.42310642101088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050a6db98d73%3A0x188a59c3622fdbae!2sUniversity%20of%20Ottawa!5e0!3m2!1sen!2sca!4v1686241047350!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+   
+  <br>
+
+  <h2 class="text-center">Frequently Asked Questions</h2>
+  <div class="acc">
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Do you have cancellation policy?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Yes, our hair salon has a cancellation policy in place. We understand that circumstances may arise where you need to cancel or reschedule your appointment, and we strive to accommodate our clients' needs while also ensuring the smooth operation of our salon.
+
+          Our cancellation policy requires that you provide us with at least 24 hours' notice if you need to cancel or reschedule your appointment. This allows us to offer the time slot to another client who may be waiting for an appointment.
+          
+          In the event that you fail to provide the required notice or miss your appointment without prior notification, we may apply a cancellation fee. The specific fee amount may depend on the length and type of the scheduled service. We appreciate your understanding and cooperation in adhering to our cancellation policy.
+          
+          If you have any further questions or need to cancel or reschedule an appointment, please don't hesitate to contact us. We're here to assist you and provide exceptional service.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          What happens if I am late for my appointment?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          If you are running late for your appointment at our hair salon, we kindly request that you notify us as soon as possible. While we understand that unforeseen circumstances can sometimes cause delays, punctuality is important to ensure that we can provide you with the best service and maintain a smooth schedule for all our clients.
+
+          Depending on the circumstances and the availability of our stylists, we will do our best to accommodate your appointment. However, please note that if you arrive significantly late, it may impact the length of your appointment or the services that can be performed within the remaining time.
+          
+          In some cases, we may need to reschedule your appointment to ensure that we can serve you and other clients efficiently. We value the time of all our clients, and making adjustments may be necessary to maintain a timely schedule and provide quality service to everyone.
+          
+          We encourage you to arrive a few minutes before your scheduled appointment time to allow for check-in and any necessary preparations. If you anticipate being late or need to reschedule, please contact us promptly so that we can assist you accordingly.
+          
+          Our goal is to provide you with an exceptional salon experience, and we appreciate your understanding and cooperation regarding punctuality and appointment scheduling.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          How experienced are your stylists?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          At our hair salon, we take great pride in the expertise and experience of our stylists. We have assembled a team of highly skilled professionals who are dedicated to providing top-quality service to our clients.
+
+          Our stylists undergo rigorous training and education to stay up-to-date with the latest trends, techniques, and advancements in the hair industry. They are passionate about their craft and are committed to continuously refining their skills to deliver exceptional results.
+          
+          We have a diverse team of stylists with varying levels of experience. While some may be newer to the industry, they are mentored and supervised by our senior stylists who possess extensive experience and knowledge. This ensures that every client receives excellent service and attention to detail, regardless of the stylist assigned to their appointment.
+          
+          We understand that each client has unique needs and preferences, and our stylists are adept at providing personalized consultations and recommendations to achieve the desired look. Whether you're seeking a classic cut, a trendy style, a specialized treatment, or a custom color, our experienced stylists are equipped to deliver outstanding results.
+          
+          Rest assured that our salon prioritizes the ongoing professional development of our stylists, ensuring that they are equipped with the latest techniques, tools, and knowledge. Your satisfaction and trust in our stylists' expertise are of utmost importance to us.
+          
+          If you have specific preferences or would like to inquire about the experience level of our stylists, feel free to reach out to us. We are more than happy to provide any additional information and assist you in selecting the perfect stylist for your desired hairstyle.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
